@@ -1704,3 +1704,12 @@ html {
         height: 220px;
     }
 }
+.small-title {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    z-index: 5;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
