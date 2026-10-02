@@ -1795,3 +1795,67 @@ html {
         margin-bottom: 18px !important;
     }
 }
+/* ========================================
+   FINAL HERO TEXT SIZING
+======================================== */
+
+/* LAPTOP / DESKTOP */
+@media screen and (min-width: 769px) {
+
+    .hero {
+        min-height: 100vh;
+        padding: 120px 8%;
+    }
+
+    .hero-content {
+        max-width: 900px;
+    }
+
+    .small-title {
+        font-size: 16px !important;
+        letter-spacing: 4px !important;
+        margin-bottom: 22px !important;
+        text-align: left !important;
+    }
+
+    .hero h1 {
+        font-size: clamp(55px, 6vw, 82px);
+        line-height: 1.05;
+    }
+
+    .hero-description {
+        font-size: 19px;
+        max-width: 650px;
+    }
+}
+
+
+/* PHONE */
+@media screen and (max-width: 768px) {
+
+    .hero {
+        min-height: auto;
+        padding: 70px 20px 60px;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .small-title {
+        font-size: 13px !important;
+        letter-spacing: 2px !important;
+        text-align: center !important;
+        margin-bottom: 18px !important;
+    }
+
+    .hero h1 {
+        font-size: clamp(36px, 10vw, 48px);
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+}
