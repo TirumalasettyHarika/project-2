@@ -1713,3 +1713,15 @@ html {
     font-size: 14px;
     letter-spacing: 3px;
 }
+.small-title {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 10 !important;
+    color: #ffffff !important;
+    font-size: 14px !important;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 18px;
+}
