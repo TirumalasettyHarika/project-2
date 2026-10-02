@@ -1025,3 +1025,300 @@ footer p {
         gap: 20px;
     }
 }
+/* =========================================
+   NAVBAR HOVER EFFECT
+========================================= */
+
+.nav-links a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: var(--gold);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+/* ORDER BUTTON HOVER */
+
+.order-btn {
+    transition: all 0.3s ease;
+}
+
+.order-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(90, 48, 32, 0.25);
+}
+/* =========================================
+   SMOOTH SCROLLING
+========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+/* =========================================
+   SCROLL ANIMATIONS
+========================================= */
+
+.menu-card,
+.signature-section,
+.about-content,
+.gallery-item,
+.contact-section {
+    animation: fadeUp 0.8s ease both;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* =========================================
+   SCROLL REVEAL
+========================================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        padding: 18px 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .nav-links {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px 24px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-links li {
+        list-style: none;
+    }
+
+    .nav-links a {
+        font-size: 17px;
+    }
+
+    .order-btn {
+        display: none;
+    }
+
+
+    /* HERO */
+    .hero {
+        min-height: 90vh;
+        padding: 100px 20px 70px;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        line-height: 1.05;
+        margin-bottom: 25px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* CART */
+    .cart-button {
+        right: 18px;
+        bottom: 18px;
+        padding: 14px 22px;
+        font-size: 17px;
+        z-index: 9999;
+    }
+
+
+    /* MENU */
+    .menu-section {
+        padding: 70px 20px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .menu-card {
+        width: 100%;
+    }
+
+
+    /* SIGNATURE */
+    .signature-section {
+        flex-direction: column;
+        gap: 35px;
+        padding: 70px 20px;
+    }
+
+    .signature-image,
+    .signature-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .signature-image {
+        height: 280px;
+    }
+
+    .signature-content h2 {
+        font-size: 36px;
+    }
+
+    .signature-points {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+
+    /* ABOUT */
+    .about-section {
+        padding: 70px 20px;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-content h2 {
+        font-size: 36px;
+    }
+
+
+    /* GALLERY */
+    .gallery-section {
+        padding: 70px 20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+
+    /* CONTACT */
+    .contact-section {
+        padding: 70px 20px;
+        text-align: center;
+    }
+
+    .contact-section h2 {
+        font-size: 38px;
+    }
+
+
+    /* GENERAL BUTTONS */
+    .primary-btn {
+        display: inline-block;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+
+/* SMALL PHONES */
+@media screen and (max-width: 480px) {
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .nav-links {
+        gap: 15px 18px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 80px 18px 60px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .cart-button {
+        right: 14px;
+        bottom: 14px;
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+
+    .signature-content h2,
+    .about-content h2 {
+        font-size: 32px;
+    }
+}

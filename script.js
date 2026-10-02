@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+ document.addEventListener("DOMContentLoaded", function () {
   let cart = [];
 
   const orderButtons = document.querySelectorAll(".menu-card button");
@@ -213,3 +213,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   console.log("☕ Brew & Bloom JavaScript loaded!");
 });
+
