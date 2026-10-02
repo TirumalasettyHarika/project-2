@@ -1760,3 +1760,38 @@ html {
     font-size: 14px !important;
     letter-spacing: 3px !important;
 }
+/* ========================================
+   FIX MOBILE NAVBAR + HERO
+======================================== */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        position: relative;
+        z-index: 1000;
+    }
+
+    .navbar {
+        min-height: auto;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 70px 20px 60px;
+    }
+
+    .hero-content {
+        position: relative !important;
+        z-index: 2 !important;
+    }
+
+    .small-title {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: relative !important;
+        z-index: 3 !important;
+        margin-top: 10px !important;
+        margin-bottom: 18px !important;
+    }
+}
